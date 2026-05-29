@@ -220,7 +220,7 @@
 
 <nav>
   <div class="wrap nav-inner">
-    <a href="#home" class="brand">Betelihem Ashebo</a>
+    <a href="#home" class="brand" aria-label="Home"></a>
     <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#news">News</a>
@@ -458,7 +458,6 @@
       .then(r => r.json())
       .then(d => {
         document.getElementById('visitCount').textContent = d.count;
-        document.getElementById('visits').hidden = false;
       })
       .catch(() => {});
   }
