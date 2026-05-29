@@ -11,9 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-  /* ============================================================
-     THEME TOKENS  — edit colors here
-     ============================================================ */
+  
   :root[data-theme="dark"]{
     --bg:        #080b11;
     --bg-soft:   #0d121b;
@@ -58,7 +56,7 @@
   .accent{color:var(--accent);font-weight:600}
   .accent:hover{text-decoration:underline;text-underline-offset:3px}
 
-  /* atmosphere */
+ 
   body::before{
     content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
     background:
@@ -68,7 +66,7 @@
 
   .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
 
-  /* ============================================================ NAV */
+  
   nav{
     position:sticky;top:0;z-index:50;
     backdrop-filter:saturate(160%) blur(14px);
@@ -88,7 +86,7 @@
   .toggle:hover{color:var(--accent);border-color:var(--accent)}
   .toggle svg{width:18px;height:18px}
 
-  /* ============================================================ HERO */
+  
   .hero{display:grid;grid-template-columns:230px 1fr;gap:54px;align-items:start;padding:84px 0 68px}
   .avatar{
     width:200px;height:200px;border-radius:50%;object-fit:cover;
@@ -111,7 +109,7 @@
   .socials a:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-3px);background:var(--card-hover)}
   .socials svg{width:18px;height:18px}
 
-  /* ============================================================ SECTIONS */
+  
   section.block{padding:48px 0}
   .sec-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:30px;gap:20px;flex-wrap:wrap}
   h2.sec-title{font-family:"Bricolage Grotesque";font-weight:800;font-size:2rem;letter-spacing:-.02em}
@@ -119,7 +117,7 @@
   .viewall{color:var(--text-dim);font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:6px;transition:.2s}
   .viewall:hover{color:var(--accent);gap:10px}
 
-  /* research cards */
+  
   .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:40px}
   .area{
     background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;
@@ -134,7 +132,7 @@
   .area h3{font-family:"Bricolage Grotesque";font-weight:700;font-size:1.08rem;margin-bottom:8px}
   .area p{color:var(--text-mut);font-size:.92rem;line-height:1.55}
 
-  /* publication */
+ 
   .pub{
     background:var(--card);border:1px solid var(--border);border-radius:18px;
     padding:24px;display:grid;grid-template-columns:160px 1fr;gap:24px;transition:.25s;
@@ -166,7 +164,7 @@
     font-size:.82rem;line-height:1.55;white-space:pre-wrap;overflow-x:auto;
   }
 
-  /* ============================================================ NEWS */
+
   .news{display:flex;flex-direction:column;gap:14px}
   .news-item{
     display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:flex-start;
@@ -184,7 +182,7 @@
   .news-date{display:flex;align-items:center;gap:6px;color:var(--text-mut);font-size:.84rem;margin-top:6px}
   .news-date svg{width:13px;height:13px}
 
-  /* ============================================================ FOOTER */
+  
   footer{border-top:1px solid var(--border);margin-top:60px;padding:42px 0}
   .foot-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
   .foot-name{font-family:"Bricolage Grotesque";font-weight:800;font-size:1.1rem;margin-bottom:4px}
@@ -198,13 +196,13 @@
   .visits svg{width:14px;height:14px}
   .visits b{color:var(--text-dim);font-weight:600}
 
-  /* ============================================================ LOAD ANIM */
+
   .reveal{opacity:0;transform:translateY(16px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
   @keyframes rise{to{opacity:1;transform:none}}
   .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}
   .d4{animation-delay:.35s}.d5{animation-delay:.45s}
 
-  /* ============================================================ RESPONSIVE */
+  
   @media(max-width:760px){
     .hero{grid-template-columns:1fr;gap:28px;text-align:center;padding:54px 0 44px}
     .avatar{margin:0 auto}
@@ -219,7 +217,7 @@
 </head>
 <body>
 
-<!-- ======================= NAV ======================= -->
+
 <nav>
   <div class="wrap nav-inner">
     <a href="#home" class="brand">Betelihem Ashebo</a>
@@ -234,9 +232,9 @@
 
 <main class="wrap">
 
-  <!-- ======================= HERO ======================= -->
+ 
   <section class="hero" id="home">
-    <!-- Replace src with your photo (e.g. assets/me.jpg) -->
+    
     <img class="avatar reveal d1" alt="Betelihem Ashebo"
          src="me.jpg" />
     <div>
@@ -268,7 +266,7 @@
     </div>
   </section>
 
-  <!-- ======================= NEWS ======================= -->
+ 
   <section class="block" id="news">
     <div class="sec-head reveal d1">
       <div>
@@ -277,8 +275,7 @@
       </div>
     </div>
 
-    <!-- Duplicate a .news-item for each update. Two icons provided below:
-         "paper" (document) and "award" (medal). Use whichever fits. -->
+    
     <div class="news">
 
       <div class="news-item reveal d2">
@@ -324,7 +321,7 @@
     </div>
   </section>
 
-  <!-- ======================= RESEARCH ======================= -->
+ 
   <section class="block" id="research">
     <div class="sec-head reveal d1">
       <div>
@@ -351,7 +348,7 @@
       </div>
     </div>
 
-    <!-- A publication entry — duplicate this .pub block for each paper -->
+    
     <article class="pub reveal d5">
       <img class="pub-thumb" alt="Paper figure"
            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='100'%3E%3Crect width='160' height='100' fill='%230d121b'/%3E%3Crect x='14' y='16' width='132' height='10' rx='3' fill='%231d2738'/%3E%3Crect x='14' y='34' width='110' height='8' rx='3' fill='%231d2738'/%3E%3Crect x='14' y='50' width='124' height='8' rx='3' fill='%231d2738'/%3E%3Crect x='14' y='70' width='70' height='14' rx='3' fill='%235b9dff' opacity='.4'/%3E%3C/svg%3E" />
@@ -368,7 +365,7 @@
       </div>
     </article>
 
-    <!-- A publication entry — duplicate this .pub block for each paper -->
+  
     <article class="pub reveal d5">
       <img class="pub-thumb" alt="Paper figure"
            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='100'%3E%3Crect width='160' height='100' fill='%230d121b'/%3E%3Crect x='14' y='16' width='132' height='10' rx='3' fill='%231d2738'/%3E%3Crect x='14' y='34' width='100' height='8' rx='3' fill='%231d2738'/%3E%3Crect x='14' y='50' width='120' height='8' rx='3' fill='%231d2738'/%3E%3Crect x='14' y='70' width='70' height='14' rx='3' fill='%235b9dff' opacity='.4'/%3E%3C/svg%3E" />
@@ -399,7 +396,7 @@
   </section>
 </main>
 
-<!-- ======================= FOOTER ======================= -->
+
 <footer>
   <div class="wrap foot-inner">
     <div>
@@ -421,10 +418,10 @@
 </footer>
 
 <script>
-  // year
+ 
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // BibTeX toggle
+ 
   document.querySelectorAll('.bibtex-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
       const box = btn.closest('.pub').querySelector('.bibtex-box');
@@ -432,7 +429,7 @@
     });
   });
 
-  // theme toggle (persists if storage available, degrades gracefully)
+  
   const root = document.documentElement;
   const btn  = document.getElementById('themeBtn');
   const SUN  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
@@ -452,27 +449,18 @@
     apply(next); setStored(next);
   });
 
-  /* ============================================================
-     VISITOR ANALYTICS  (free, privacy-friendly — no cookies)
-     ------------------------------------------------------------
-     1. Sign up at https://www.goatcounter.com  (free) and pick a
-        code, e.g. "yourname". Your dashboard lives at
-        https://yourname.goatcounter.com  — it shows total visits,
-        countries, referrers and pages.
-     2. Replace BOTH instances of YOURCODE below with that code.
-     3. Deploy. The dashboard is yours; the footer shows live totals.
-     ------------------------------------------------------------ */
-  const GC_CODE = 'betelihemashebo';   // <-- change this
+  
+  const GC_CODE = 'betelihemashebo';   
 
   if (GC_CODE !== 'YOURCODE') {
-    // record this page view
+    
     const s = document.createElement('script');
     s.async = true;
     s.dataset.goatcounter = `https://${GC_CODE}.goatcounter.com/count`;
     s.src = '//gc.zgo.at/count.js';
     document.head.appendChild(s);
 
-    // show the live total in the footer
+    
     fetch(`https://${GC_CODE}.goatcounter.com/counter/TOTAL.json`)
       .then(r => r.json())
       .then(d => {
